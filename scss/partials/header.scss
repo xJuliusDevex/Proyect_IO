@@ -1,0 +1,32 @@
+.header{
+    position: sticky;
+    top: 0px;
+    .bienvenido{
+        background-color:$color_nav_div;
+        
+        &_h1{
+            color: $color_text;
+            font-family:$Quicksand;
+            margin: 0px;
+            padding: 0px;
+            /*falta animacion*/
+        }
+    }
+    .navegacion{
+        background-color:$color_nav;
+        a,li{
+            color:$color_nav_text;
+            font-family: $Serif;
+        }
+        .menu{
+            .sub_menu{
+                background-color:$color_nav; 
+                li{
+                    color:$color_nav_text;
+                    font-family: $Serif;
+                } 
+            }
+        }
+        
+    }
+}
