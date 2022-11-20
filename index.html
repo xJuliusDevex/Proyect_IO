@@ -23,11 +23,11 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-          <a href="" class="navbar-brand"><img src="./img/logo.jpeg" alt="logo" width="40" height="24" class="d-inline-block align-text-top"></a>
+          <a href="" class="navbar-brand"><img src="./img/logo.jpeg" alt="logo" width="40" height="24" class="d-inline-block align-text-top">TheFaker</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">INICIO</a>
@@ -45,14 +45,87 @@
                   <li><a href="" class="dropdown-item">EOQ</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">TEORIA DE ARBOLES</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Teoria de Arboles</a>
+                <ul class="dropdown-menu">
+                  <li><a href="" class="dropdown-item">Teoria de decision</a></li>
+                  <li><a href="" class="dropdown-item">Criterio de tomas decision</a></li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <main class="main container-fluid">
+      <section class="row justify-content-evenly">
+        <section class=" col-5 card text-bg-dark mb-3  shadow-lg rounded integrantes" style="max-width:30rem;max-height:18rem;">
+          <div class="card-header text-center h3">Team TheFaker</div>
+          <div class="card-body"> 
+            <h4 class="card-title lista_integrantes">Integrantes</h1>
+            <div class="row  lista">
+              <div class="col-7 d-flex justify-content-center name">
+                <ul>
+                  <li class="card-text student_delegado">Bruno  Calizaya Chambilla</li>
+                  <li class="card-text student">Grober  Quispe Aguilar</li>
+                  <li class="card-text student">Sebastian  Remusgo Moreno</li>
+                  <li class="card-text student">Aldo  Huisa Melchor</li>
+                  <li class="card-text student">Julio  Garcia Quispe</li>
+                </ul>
+              </div>
+              <div class="col-4  d-flex justify-content-center codigo">
+                <ul>
+                  <li class="card-text student_delegado">2019-119058</li>
+                  <li class="card-text student">2019-119028</li>
+                  <li class="card-text student">2020-119002</li>
+                  <li class="card-text student">2020-119002</li>
+                  <li class="card-text student">2019-119009</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="col-5 Introduccion">
+          <section class="Introduccion_Text">
+            <h1 class="text-center">Bienvenido a nuestra pagina</h1>
+            <p>Es un Proyecto de Investigacion Operativa donde mi grupo, considero hacer una pagina para que todos pueden probar los programas que se estan para el curso de  Investigacion Operativa.</p>
+            <h5>Escogimos lenguajes:</h5>
+            <ol>
+              <li>HTML</li>
+              <li>Javascrip</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>bootstrap</li>
+            </ol>
+            <picture class="container-fluid">
+              <div class="row justify-content-center ">
+                <div class="col-5 text-center">
+                  <img src="./img/html.png" class="img-fluid img-thumbnail rounded text-center rounded" alt="html">
+                </div>
+                <div class="col-5 text-center">
+                  <img src="./img/css1.png" class="img-fluid img-thumbnail rounded text-center rounded" alt="css">
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-5 text-center">
+                    <img src="./img/js2.png" class="img-fluid img-thumbnail rounded text-center rounded" alt="js">
+                 </div>   
+                  <div class="col-5 text-center">
+                    <img src="./img/sass.png" class="img-fluid img-thumbnail rounded text-center rounded" alt="sass">
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-5 align-content-center">
+                  <img src="./img/bootstrap.png" class="img-fluid img-thumbnail rounded text-center rounded" alt="bootstrap">
+                  </div>
+              </div>
+            </picture>
+          </section>
+          <h1>Bibliografia:</h1>
+          <ul>
+            <li class="h5">Investigacion de Operaciones (Hamdy A. Taha ) decima edicion,2017</li>
+          </ul>
+        </section>
+      </section>
+    </main>
 </body>
