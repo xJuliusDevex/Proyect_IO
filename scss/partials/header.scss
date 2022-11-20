@@ -1,32 +1,33 @@
-.header{
-    position: sticky;
-    top: 0px;
-    .bienvenido{
-        background-color:$color_nav_div;
-        
-        &_h1{
-            color: $color_text;
-            font-family:$Quicksand;
-            margin: 0px;
-            padding: 0px;
-            /*falta animacion*/
+.header
+{
+    position:sticky;
+    top:0px;
+    &_navegacion{
+        background-color: $color_nav;
+        z-index: 3;
+        &_icono{
+            font-family:$Cinzel;
         }
-    }
-    .navegacion{
-        background-color:$color_nav;
-        a,li{
-            color:$color_nav_text;
-            font-family: $Serif;
+        icono:hover{
+            background-color: blue($color: #470f0f);
         }
-        .menu{
-            .sub_menu{
-                background-color:$color_nav; 
+        &_ul{
+            display: flex;
+            justify-content:flex-end;
+            @media (max-width: 991px) {
+                &{
+                  justify-content: flex-start;
+                 }
+              }
+            ul{
+                display: inline-flex;
+                justify-content: space-around;
                 li{
-                    color:$color_nav_text;
+                    color:violet;
                     font-family: $Serif;
-                } 
+                    font-weight:  900;
+                }
             }
         }
-        
     }
 }

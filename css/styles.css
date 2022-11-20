@@ -1,0 +1,42 @@
+/*variables*/
+/*------------Partials------*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*body*/
+.header {
+  position: sticky;
+  top: 0px;
+}
+.header_navegacion {
+  background-color: rgba(4, 13, 93, 0.945);
+  z-index: 3;
+}
+.header_navegacion_icono {
+  font-family: "Cinzel", serif;
+}
+.header_navegacion icono:hover {
+  background-color: 15;
+}
+.header_navegacion_ul {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 991px) {
+  .header_navegacion_ul {
+    justify-content: flex-start;
+  }
+}
+.header_navegacion_ul ul {
+  display: inline-flex;
+  justify-content: space-around;
+}
+.header_navegacion_ul ul li {
+  color: violet;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=styles.css.map */
