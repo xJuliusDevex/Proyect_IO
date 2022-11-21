@@ -11,7 +11,7 @@
         icono:hover{
             background-color: blue($color: #470f0f);
         }
-        &_ul{
+        &_navbar{
             display: flex;
             justify-content:flex-end;
             @media (max-width: 991px) {
@@ -19,15 +19,20 @@
                   justify-content: flex-start;
                  }
               }
-            ul{
-                display: inline-flex;
-                justify-content: space-around;
-                li{
-                    color:violet;
+              ul{
+                a{
                     font-family: $Serif;
-                    font-weight:  900;
+                    font-weight:600;
+                    color:$colo_text_nav;
+
                 }
-            }
+                padding-right: 15px;
+                
+                ul{
+                    background-color: $color_nav;
+                    font-weight: bolder;
+                }
+              }
         }
     }
 }
